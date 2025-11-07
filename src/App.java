@@ -26,7 +26,17 @@ public class App {
             values.add(input);
         }
         System.out.println("");
-        //Write your code below here
+        int value = Integer.valueOf(scanner.nextLine());
+        ArrayList<Integer> biggerValues = new ArrayList<>();
+        for(int number : values){
+            if (number>value){
+                biggerValues.add(number);
+            }
+        }
+             System.out.println("");
+        for(int number : biggerValues){
+            System.out.println(number);
+        }
 
 
 
